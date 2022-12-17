@@ -7,16 +7,22 @@
 
  Remove every '#' before "$pecho" in the script file to get verbose output.
 
-## Requirements:
+## Requirements
 Window Manager: sway
 Dependicies: swaymsg, jshon
 
-## Usage: 
- ```bash
- sway-rectfetcher <app_id>
- ```
+## Usage
+```bash
+ $ sway-rectfetcher <app_id>
+```
 
-## Output format: 
+## Output format
 ```bash
  <x> <y> <width> <height>
+```
+
+## Example
+```bash
+$ sway-rectfetcher emacs
+1080 1546 1800 374
 ```
