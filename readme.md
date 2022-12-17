@@ -1,6 +1,6 @@
 # Swaymsg-treefetch: Simple bash scripts to fetch wanted info using swaymsg
 
-## Requirements
+### Requirements
 - Window Manager: sway
 - Dependicies: swaymsg, jshon
 
