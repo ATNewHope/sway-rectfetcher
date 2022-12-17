@@ -2,7 +2,7 @@
 
 ### Requirements
 - Window Manager: sway
-- Dependicies: swaymsg, jshon
+- Dependencies: swaymsg, jshon
 
 ## Swaymsg-rectfetcher
 
