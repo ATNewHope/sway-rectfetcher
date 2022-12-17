@@ -88,4 +88,5 @@ if [ ! -z "$rect" ]; then
 else
  echo ERROR: No rect found. Window with app_id $appid0 may not exist, or "swaymsg -t get_tree" has updated a new structure of json, or the wanted window info in the json is too deep.
 fi
-echo $x $y $w $h
+#echo $x $y $w $h
+echo $x $y
