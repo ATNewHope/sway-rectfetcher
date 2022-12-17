@@ -3,6 +3,10 @@
 ### Requirements
 - Window Manager: sway
 - Dependencies: swaymsg, jshon
+- Execution permission. To acquire this, use following
+```bash
+sudo chmod +x <path to script>
+```
 
 ## Swaymsg-rectfetcher
 
@@ -17,7 +21,7 @@ This bash script could get the rect (i.e. absolute coordinates and size) info of
 
 ### Usage
 ```bash
- $ ./swaymsg-rectfetcher <app_id>
+ $ ./swaymsg-rectfetcher.sh <app_id>
 ```
 
 ### Output format
@@ -33,7 +37,7 @@ Remove every '#' before "$pecho" in the script file to get verbose output.
 
 ### Usage
 ```bash
- $ ./swaymsg-focusfetcher
+ $ ./swaymsg-focusfetcher.sh
 ```
 
 ### Output format
