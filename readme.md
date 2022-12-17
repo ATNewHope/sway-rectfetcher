@@ -1,4 +1,4 @@
-# Sway-rectfetcher: A simple bash script fetch rect info using swaymsg
+# Sway-rectfetcher: A simple bash script to fetch rect info using swaymsg
 
  This bash script could get the rect (i.e. absolute coordinates and size) info of the window with specified app_id (the first argument) in SwayWM.
 
@@ -26,3 +26,5 @@ Dependicies: swaymsg, jshon
 $ sway-rectfetcher emacs
 1080 1546 1800 374
 ```
+## LICENSE
+MIT license
