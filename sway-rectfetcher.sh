@@ -13,6 +13,7 @@
 ## If no one is focused, the first one will be selected.
 ##
 ## Remove every '#' before "$pecho" in this script to get verbose output.
+## LICENSE: MIT license 
 
 pecho='echo'
 appid0="\"$1\""
