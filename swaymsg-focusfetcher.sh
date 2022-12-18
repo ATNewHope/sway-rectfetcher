@@ -21,12 +21,13 @@ br=false
 getwindowinfo(){
 # some windows don't have the app_id at all, -Q to ignore error
 #$pecho $(cat $1)
-appid=$(jshon -Q -e "app_id" <$1)
+appid="$(jshon -Q -e "app_id" -u <$1)"
 focus=$(jshon -Q -e "focused" <$1)
+us=$(jshon -Q -e "rect" <$1)
 #$pecho ......GET "app_id:" $appid "focus:" $focus
 #$pecho ......id: $(jshon -Q -e "id" <$1) name: $(jshon -Q -e "name" <$1)
 if [ ! -z $focus ]&& [ $focus == "true" ]; then
- nm=$appid
+ nm="$appid"
  br=true
 fi
 }
@@ -70,5 +71,7 @@ done;fi #"for i1" END
 if [ $br == "true" ]; then
  if [ ! -z $nm ]; then echo $nm; else echo "NOAPPID"; fi
 else
- echo ERROR: No focused window found.
+ echo ERROR-No-focused-window
 fi
+echo $nm
+#notify-send "$us $nm being focused."
